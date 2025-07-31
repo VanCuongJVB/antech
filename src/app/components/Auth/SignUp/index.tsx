@@ -6,8 +6,10 @@ import SocialSignUp from '../SocialSignUp'
 import Logo from '@/app/components/Layout/Header/Logo'
 import { useState } from 'react'
 import Loader from '@/app/components/Common/Loader'
+import { useI18n } from '@/utils/i18n'
 const SignUp = () => {
   const router = useRouter()
+  const { t } = useI18n()
   const [loading, setLoading] = useState(false)
 
   const handleSubmit = (e: any) => {
@@ -55,7 +57,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type='text'
-            placeholder='Name'
+            placeholder={t('NAME')}
             name='name'
             required
             className='w-full rounded-md border border-dark_border/60 border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition border-darkmode placeholder:text-darkmode focus:border-darkmode focus-visible:shadow-none text-darkmode dark:focus:border-darkmode'
@@ -64,7 +66,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type='email'
-            placeholder='Email'
+            placeholder={t('EMAIL')}
             name='email'
             required
             className='w-full rounded-md border border-dark_border/60 border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition border-darkmode placeholder:text-darkmode focus:border-darkmode focus-visible:shadow-none text-darkmode dark:focus:border-darkmode'
@@ -73,7 +75,7 @@ const SignUp = () => {
         <div className='mb-[22px]'>
           <input
             type='password'
-            placeholder='Password'
+            placeholder={t('PASSWORD')}
             name='password'
             required
             className='w-full rounded-md border border-dark_border/60 border-solid bg-transparent px-5 py-3 text-base text-dark outline-hidden transition border-darkmode placeholder:text-darkmode focus:border-darkmode focus-visible:shadow-none text-darkmode dark:focus:border-darkmode'
@@ -83,7 +85,7 @@ const SignUp = () => {
           <button
             type='submit'
             className='flex w-full items-center text-18 font-medium justify-center rounded-md bg-darkmode px-5 py-3 text-white transition duration-300 ease-in-out hover:bg-transparent hover:text-darkmode border-darkmode border '>
-            Sign Up {loading && <Loader />}
+            {t('SIGN_UP')} {loading && <Loader />}
           </button>
         </div>
       </form>
@@ -102,7 +104,7 @@ const SignUp = () => {
       <p className='text-body-secondary text-black text-base'>
         Already have an account?
         <Link href='/' className='pl-2 text-primary hover:underline'>
-          Sign In
+          {t('SIGN_IN')}
         </Link>
       </p>
     </>
