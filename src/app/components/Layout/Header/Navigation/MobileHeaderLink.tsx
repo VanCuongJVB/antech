@@ -5,7 +5,7 @@ import { useI18n } from '@/utils/i18n'
 
 const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
   const [submenuOpen, setSubmenuOpen] = useState(false);
-  const { t } = useI18n()
+  // const { t } = useI18n()
 
   const handleToggle = () => {
     setSubmenuOpen(!submenuOpen);
@@ -18,7 +18,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
         onClick={item.submenu ? handleToggle : undefined}
         className="flex items-center justify-between w-full py-2 text-white text-muted focus:outline-hidden"
       >
-        {t(item.label)}
+        {item.label}
         {item.submenu && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +45,7 @@ const MobileHeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
               href={subItem.href}
               className="block py-2 text-gray-500 hover:bg-gray-200"
             >
-              {t(subItem.label)}
+              {subItem.label}
             </Link>
           ))}
         </div>

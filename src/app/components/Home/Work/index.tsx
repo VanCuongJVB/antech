@@ -1,11 +1,11 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Image from 'next/image'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { workdata } from '@/app/types/workdata'
-import WorkSkeleton from '../../Skeleton/Work'
+import { useI18n } from '@/utils/i18n'
 
 const settings = {
   dots: false,
@@ -49,26 +49,8 @@ const settings = {
 }
 
 const Work = () => {
-  // fetch work data
-  const [work, setWork] = useState<workdata[]>([])
-  const [loading, setLoding] = useState(true)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setWork(data.WorkData)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      } finally {
-        setLoding(false)
-      }
-    }
-
-    fetchData()
-  }, [])
+  const { t } = useI18n()
+  const work = t('WorkData') as workdata[]
 
   return (
     <section
@@ -77,44 +59,42 @@ const Work = () => {
       <div className='container mx-auto max-w-7xl px-4'>
         <div className='text-center overflow-hidden'>
           <h3 className='text-black my-5'>
-            We work in several verticals.
+            {t('we_work_in_several_verticals')}
           </h3>
         </div>
       </div>
 
       <Slider {...settings}>
-        {loading
-          ? Array.from({ length: 5 }).map((_, i) => <WorkSkeleton key={i} />)
-          : work.map((items, i) => (
-              <div key={i}>
-                <div className='bg-white dark:bg-darkHeroBg m-3 py-14 my-10 text-center shadow-xl rounded-3xl'>
-                  <div className='relative'>
-                    <Image
-                      src={items.imgSrc}
-                      alt='gaby'
-                      width={182}
-                      height={182}
-                      className='inline-block m-auto'
-                    />
-                    <div className='absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full'>
-                      <Image
-                        src={'/images/wework/linkedin.svg'}
-                        alt='greenbg'
-                        width={30}
-                        height={30}
-                        className='inline-block'
-                      />
-                    </div>
-                  </div>
-                  <h6 className='text-xl text-black dark:text-white font-bold pt-14'>
-                    {items.name}
-                  </h6>
-                  <p className='text-base dark:text-white font-normal pt-4 pb-2'>
-                    {items.profession}
-                  </p>
-                </div>
+        {work.map((items, i) => (
+          <div key={i}>
+            <div className='bg-white dark:bg-darkHeroBg m-3 py-14 my-10 text-center shadow-xl rounded-3xl'>
+              <div className='relative'>
+                <Image
+                  src={items.imgSrc}
+                  alt='gaby'
+                  width={182}
+                  height={182}
+                  className='inline-block m-auto'
+                />
+                {/* <div className='absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full'>
+                  <Image
+                    src={'/images/wework/linkedin.svg'}
+                    alt='greenbg'
+                    width={30}
+                    height={30}
+                    className='inline-block'
+                  />
+                </div> */}
               </div>
-            ))}
+              <h6 className='text-xl text-black dark:text-white font-bold pt-14'>
+                {items.name}
+              </h6>
+              <p className='text-base dark:text-white font-normal pt-4 pb-2'>
+                {items.profession}
+              </p>
+            </div>
+          </div>
+        ))}
       </Slider>
     </section>
   )

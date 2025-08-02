@@ -1,10 +1,10 @@
 'use client'
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Slider from 'react-slick'
 import Image from 'next/image'
 import { Icon } from '@iconify/react'
 import { testimonials } from '@/app/types/testimonials'
-import TestimonialSkeleton from '../../Skeleton/Testimonial'
+import { useI18n } from '@/utils/i18n'
 
 interface TestimonialType {
   name: string
@@ -100,25 +100,8 @@ const TestimonialCard: React.FC<TestimonialCardProps> = ({ items }) => {
 }
 
 const Testimonial: React.FC = () => {
-  // fetch data
-  const [testimonals, setTestimonials] = useState<testimonials[]>([])
-  const [loading, setLoading] = useState(true)
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setTestimonials(data.TestimonialsData)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      } finally {
-        setLoading(false)
-      }
-    }
-    fetchData()
-  }, [])
+  const { t } = useI18n()
+  const testimonals = t('TestimonialsData') as testimonials[]
 
   return (
     <section
@@ -127,17 +110,13 @@ const Testimonial: React.FC = () => {
       <div className='container mx-auto max-w-7xl px-4'>
         <div className=''>
           <div className='text-center'>
-            <h2 className='my-3'>See what others are saying.</h2>
+            <h2 className='my-3'>{t('testimonials.SEE_OTHERS_SAYING')}</h2>
           </div>
           <div className='mt-20'>
             <Slider {...settings}>
-              {loading
-                ? Array.from({ length: 3 }).map((_, i) => (
-                    <TestimonialSkeleton key={i} />
-                  ))
-                : testimonals.map((items, i) => (
-                    <TestimonialCard key={i} items={items} />
-                  ))}
+              {testimonals.map((items, i) => (
+                <TestimonialCard key={i} items={items} />
+              ))}
             </Slider>
           </div>
         </div>

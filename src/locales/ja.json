@@ -1,6 +1,6 @@
 {
   "DESIGN_AGENCY": "ソフトウェアおよびシステムの開発。",
-  "TAGLINE" : "大胆なアイデアをデジタルの現実に変えます。",
+  "TAGLINE": "大胆なアイデアをデジタルの現実に変えます。",
   "GET_STARTED": "始める",
   "ABOUT_US": "私たちについて",
   "KNOW_MORE_ABOUT_US": "私たちについてもっと知る。",
@@ -11,8 +11,322 @@
   "PASSWORD": "パスワード",
   "About Us": "私たちについて",
   "Team": "チーム",
-  "FAQ": "よくある質問",
   "Blog": "ブログ",
   "Docs": "ドキュメント",
-  "contact": "今すぐお問い合わせください。"
+  "contact_now": "今すぐお問い合わせください。",
+  "we_work_in_several_verticals": "私たちの専門性は多彩な領域に及びます。",
+  "Dedicated": {
+    "TITLE": "インテリジェントなWebソリューションを創造し、デジタル体験を向上させます。",
+    "DESCRIPTION": "アイデアの段階から実行まで伴走し、高性能で柔軟性があり、拡張性の高いWebサイトを提供します。",
+    "AUTHOR": "CEO"
+  },
+  "TEAM": {
+    "TITLE": "私たちのチームは、あなたが最高のものを受け取るにふさわしいと信じています。",
+    "SUBTITLE": "情熱と専門知識を兼ね備えた多様なチームが、期待を超える革新的なソリューションを届けます。",
+    "IMAGE_ALT": "献身的なチームが働くオフィスの風景"
+  },
+  "featured_works": "注目の作品。",
+  "FAQ": {
+    "TITLE": "よくある質問",
+    "HEADING": "よくある質問。",
+    "Q1": {
+      "QUESTION": "私のサイトをデザインできますか？",
+      "ANSWER": "はい！私たちのデザインチームは、お客様のブランドに合わせたユーザー中心のレイアウトとビジュアルを作成するために密に連携します。"
+    },
+    "Q2": {
+      "QUESTION": "私のサイトをコーディングできますか？",
+      "ANSWER": "もちろんです。私たちは最新のウェブ技術を専門としており、お客様のサイトが高性能でレスポンシブ、そしてセキュアであることを保証します。"
+    },
+    "Q3": {
+      "QUESTION": "所在地はどこですか？",
+      "ANSWER": "私たちの本社は日本の名古屋市にあり、リモートチームも世界中で対応しています。"
+    }
+  },
+  "testimonials": {
+    "SEE_OTHERS_SAYING": "他の人の声を見てみましょう。"
+  },
+  "ARTICLES_TITLE": "記事",
+  "ARTICLES_SUBTITLE": "最新の投稿。",
+  "ARTICLES_READ": "分で読む",
+  "Contact": {
+    "TITLE": "お問い合わせ",
+    "HEADING": "ビジネスを次のレベルに引き上げましょう。",
+    "PARAGRAPH": "サポートはお任せください。お名前とメールアドレスをご入力いただければ、できるだけ早くご連絡いたします。",
+    "INPUT_NAME": "お名前",
+    "INPUT_EMAIL": "メールアドレス",
+    "BUTTON": "送信"
+  },
+  "headerData": [
+    {
+      "label": "私たちについて",
+      "href": "#About"
+    },
+    {
+      "label": "チーム",
+      "href": "#Team"
+    },
+    {
+      "label": "よくある質問",
+      "href": "#FAQ"
+    },
+    {
+      "label": "ブログ",
+      "href": "#Blog"
+    },
+    {
+      "label": "ドキュメント",
+      "href": "/documentation"
+    }
+  ],
+  "Aboutdata": [
+    {
+      "heading": "私たちについて。",
+      "imgSrc": "/images/aboutus/imgOne.svg",
+      "paragraph": "OurCompanyでは、クリエイティビティとテクノロジーを融合し、実際のビジネス成果をもたらすデジタルソリューションを構築します。アイデア段階からリリースまで、常にサポートをお約束します。",
+      "link": "詳細を見る"
+    },
+    {
+      "heading": "サービス。",
+      "imgSrc": "/images/aboutus/imgTwo.svg",
+      "paragraph": "カスタムソフトウェア開発、UX/UIデザイン、クラウド統合を専門とし、お客様の目標とユーザーに最適化されたソリューションを提供します。",
+      "link": "詳細を見る"
+    },
+    {
+      "heading": "私たちの作品。",
+      "imgSrc": "/images/aboutus/imgThree.svg",
+      "paragraph": "最新プロジェクトを厳選してご紹介。ウェブやモバイルで魅力的な体験を届ける、革新と技術の結晶です。",
+      "link": "詳細を見る"
+    }
+  ],
+  "WorkData": [
+    {
+      "profession": "Framework",
+      "name": "Laravel",
+      "imgSrc": "/images/framework/Laravel.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Vue.js",
+      "imgSrc": "/images/framework/VueDotJs.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "PHP",
+      "imgSrc": "/images/framework/PHP.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Angular",
+      "imgSrc": "/images/framework/angular.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Go",
+      "imgSrc": "/images/framework/Go.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "JavaScript",
+      "imgSrc": "/images/framework/JavaScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "TypeScript",
+      "imgSrc": "/images/framework/TypeScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Python",
+      "imgSrc": "/images/framework/Python.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "React",
+      "imgSrc": "/images/framework/React.svg"
+    }
+  ],
+  "FeaturedData": [
+    {
+      "heading": "コンピュータブランドのブランディングデザイン。",
+      "imgSrc": "/images/featured/feat1.jpg"
+    },
+    {
+      "heading": "モバイルアプリの3D壁紙。",
+      "imgSrc": "/images/featured/feat2.jpg"
+    },
+    {
+      "heading": "コンピュータブランドのブランディングデザイン。",
+      "imgSrc": "/images/featured/feat1.jpg"
+    },
+    {
+      "heading": "モバイルアプリの3D壁紙。",
+      "imgSrc": "/images/featured/feat2.jpg"
+    }
+  ],
+  "PlansData": [
+    {
+      "heading": "スタートアップ",
+      "price": {
+        "monthly": 19,
+        "yearly": 190
+      },
+      "user": "ユーザーあたり",
+      "features": {
+        "profiles": "5つのソーシャルプロファイル",
+        "posts": "プロフィールごとに5件のスケジュール投稿",
+        "templates": "400以上のテンプレート",
+        "view": "カレンダービュー",
+        "support": "24時間年中無休サポート"
+      }
+    },
+    {
+      "heading": "ビジネス",
+      "price": {
+        "monthly": 29,
+        "yearly": 290
+      },
+      "user": "ユーザーあたり",
+      "features": {
+        "profiles": "10のソーシャルプロファイル",
+        "posts": "プロフィールごとに5件のスケジュール投稿",
+        "templates": "600以上のテンプレート",
+        "view": "カレンダービュー",
+        "support": "24時間VIPサポート"
+      }
+    },
+    {
+      "heading": "エージェンシー",
+      "price": {
+        "monthly": 59,
+        "yearly": 590
+      },
+      "user": "ユーザーあたり",
+      "features": {
+        "profiles": "100のソーシャルプロファイル",
+        "posts": "プロフィールごとに100件のスケジュール投稿",
+        "templates": "800以上のテンプレート",
+        "view": "カレンダービュー",
+        "support": "24時間VIPサポート"
+      }
+    }
+  ],
+  "TestimonialsData": [
+    {
+      "name": "ロバート・フォックス",
+      "profession": "Parkview Int.Ltd CEO",
+      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "imgSrc": "/images/testimonial/user1.svg",
+      "rating": 5
+    },
+    {
+      "name": "レスリー・アレクサンダー",
+      "profession": "Parkview Int.Ltd CEO",
+      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "imgSrc": "/images/testimonial/user2.svg",
+      "rating": 4
+    },
+    {
+      "name": "コーディ・フィッシャー",
+      "profession": "Parkview Int.Ltd CEO",
+      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "imgSrc": "/images/testimonial/user3.svg",
+      "rating": 4
+    }
+  ],
+  "ArticlesData": [
+    {
+      "time": "5 分",
+      "heading": "Deliaをローンチしました",
+      "heading2": "今週のWebflow!",
+      "name": "Startuponで公開",
+      "date": "2025年2月19日",
+      "imgSrc": "/images/articles/article.png"
+    }
+  ],
+  "FooterLinksData": [
+    {
+      "section": "メニュー",
+      "links": [
+        {
+          "label": "私たちについて",
+          "href": "#About"
+        },
+        {
+          "label": "チーム",
+          "href": "#Team"
+        },
+        {
+          "label": "よくある質問",
+          "href": "#FAQ"
+        },
+        {
+          "label": "ブログ",
+          "href": "#Blog"
+        }
+      ]
+    },
+    {
+      "section": "カテゴリ",
+      "links": [
+        {
+          "label": "デザイン",
+          "href": "/"
+        },
+        {
+          "label": "モックアップ",
+          "href": "/"
+        },
+        {
+          "label": "すべて表示",
+          "href": "/"
+        },
+        {
+          "label": "ログイン",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "section": "ページ",
+      "links": [
+        {
+          "label": "404",
+          "href": "/"
+        },
+        {
+          "label": "説明書",
+          "href": "/"
+        },
+        {
+          "label": "ライセンス",
+          "href": "/"
+        }
+      ]
+    },
+    {
+      "section": "その他",
+      "links": [
+        {
+          "label": "スタイルガイド",
+          "href": "/"
+        },
+        {
+          "label": "更新履歴",
+          "href": "/"
+        }
+      ]
+    }
+  ],
+  "Beliefs": {
+    "TITLE": "信念",
+    "HEADING_MAIN": "誠実さ",
+    "HEADING_SUB": "と努力は私たちの信念です。",
+    "PARAGRAPH": "私たちは透明性と献身を信条とし、常に誠実かつ全力で取り組むことでクライアントとの信頼を築き、卓越した成果を提供します。",
+    "GET_STARTED": "開始する",
+    "BUILD_TITLE": "構築",
+    "BUILD_HIGHLIGHT": "構築",
+    "BUILD_SUBHEADING": "あなたの素晴らしいアイデアを。",
+    "BUILD_PARAGRAPH": "私たちのチームは、戦略とクリエイティビティを融合させ、お客様のビジョンを具現化し、ユーザーに響く長く愛される製品を構築します。",
+    "LEARN_MORE": "詳細を見る"
+  }
 }

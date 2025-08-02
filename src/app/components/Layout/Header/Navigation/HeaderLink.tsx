@@ -3,10 +3,10 @@ import { useState } from "react";
 import Link from "next/link";
 import { HeaderItem } from "../../../../types/menu";
 import { usePathname } from "next/navigation";
-import { useI18n } from '@/utils/i18n'
+// import { useI18n } from '@/utils/i18n'
 
 const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
-  const { t } = useI18n()
+  // const { t } = useI18n()
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const path = usePathname();
   const handleMouseEnter = () => {
@@ -30,7 +30,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
           path === item.href ? "text-black/75 " : " text-black/75 "
         }`}
       >
-        {t(item.label)}
+        {item.label}
         {item.submenu && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const HeaderLink: React.FC<{ item: HeaderItem }> = ({ item }) => {
                   : "text-black dark:text-white hover:bg-primary"
               }`}
             >
-              {t(subItem.label)}
+              {subItem.label}
             </Link>
           ))}
         </div>

@@ -13,8 +13,8 @@ const Hero = () => {
   }
 
   return (
-    <section className='relative overflow-hidden z-1'>
-      <div className='container mx-auto pt-24 max-w-7xl px-4'>
+    <section className='relative overflow-hidden z-1' style={{ height: '750px' }}>
+      <div className='container mx-auto pt-48 max-w-7xl px-4'>
         <div className='flex flex-col items-center text-center'>
           <motion.div
             {...fadeUp}
@@ -33,9 +33,9 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className='mt-10'
           >
-            <Link href='#contact'>
+            <Link href='#'>
               <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer'>
-                Contact now
+                {t('contact_now')}
               </button>
             </Link>
           </motion.div>
