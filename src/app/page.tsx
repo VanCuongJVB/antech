@@ -11,6 +11,7 @@ import Manage from '@/app/components/Home/Manage'
 import FAQ from '@/app/components/Home/FAQ'
 import Testimonial from '@/app/components/Home/Testimonials'
 import Articles from '@/app/components/Home/Articles'
+import Contact from '@/app/components/Home/Contact'
 import Join from '@/app/components/Home/Joinus'
 import Insta from '@/app/components/Home/Insta'
 import { Metadata } from 'next'
@@ -34,6 +35,7 @@ export default function Home() {
       <FAQ />
       <Testimonial />
       <Articles />
+      <Contact />
       <Join />
       <Insta />
     </main>
