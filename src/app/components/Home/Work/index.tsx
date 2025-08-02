@@ -76,7 +76,7 @@ const Work = () => {
                   height={182}
                   className='inline-block m-auto'
                 />
-                <div className='absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full'>
+                {/* <div className='absolute right-16 bottom-0 bg-white shadow-linckedin p-5 rounded-full'>
                   <Image
                     src={'/images/wework/linkedin.svg'}
                     alt='greenbg'
@@ -84,7 +84,7 @@ const Work = () => {
                     height={30}
                     className='inline-block'
                   />
-                </div>
+                </div> */}
               </div>
               <h6 className='text-xl text-black dark:text-white font-bold pt-14'>
                 {items.name}

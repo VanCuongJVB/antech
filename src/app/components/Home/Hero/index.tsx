@@ -13,8 +13,8 @@ const Hero = () => {
   }
 
   return (
-    <section className='relative overflow-hidden z-1'>
-      <div className='container mx-auto pt-24 max-w-7xl px-4'>
+    <section className='relative overflow-hidden z-1' style={{ height: '750px' }}>
+      <div className='container mx-auto pt-48 max-w-7xl px-4'>
         <div className='flex flex-col items-center text-center'>
           <motion.div
             {...fadeUp}

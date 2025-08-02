@@ -14,7 +14,12 @@
   "Blog": "ブログ",
   "Docs": "ドキュメント",
   "contact_now": "今すぐお問い合わせください。",
-  "we_work_in_several_verticals": "私たちはいくつかの業界で働いています。",
+  "we_work_in_several_verticals": "私たちの専門性は多彩な領域に及びます。",
+  "Dedicated": {
+    "TITLE": "インテリジェントなWebソリューションを創造し、デジタル体験を向上させます。",
+    "DESCRIPTION": "アイデアの段階から実行まで伴走し、高性能で柔軟性があり、拡張性の高いWebサイトを提供します。",
+    "AUTHOR": "CEO"
+  },
   "TEAM": {
     "TITLE": "私たちのチームは、あなたが最高のものを受け取るにふさわしいと信じています。",
     "SUBTITLE": "情熱と専門知識を兼ね備えた多様なチームが、期待を超える革新的なソリューションを届けます。",
@@ -34,7 +39,7 @@
     },
     "Q3": {
       "QUESTION": "所在地はどこですか？",
-      "ANSWER": "私たちの本社はタイのバンコクにあり、リモートチームも世界中で対応しています。"
+      "ANSWER": "私たちの本社は日本の名古屋市にあり、リモートチームも世界中で対応しています。"
     }
   },
   "testimonials": {
@@ -44,12 +49,12 @@
   "ARTICLES_SUBTITLE": "最新の投稿。",
   "ARTICLES_READ": "分で読む",
   "Contact": {
-    "TITLE":      "お問い合わせ",
-    "HEADING":    "ビジネスを次のレベルに引き上げましょう。",
-    "PARAGRAPH":  "サポートはお任せください。お名前とメールアドレスをご入力いただければ、できるだけ早くご連絡いたします。",
+    "TITLE": "お問い合わせ",
+    "HEADING": "ビジネスを次のレベルに引き上げましょう。",
+    "PARAGRAPH": "サポートはお任せください。お名前とメールアドレスをご入力いただければ、できるだけ早くご連絡いたします。",
     "INPUT_NAME": "お名前",
-    "INPUT_EMAIL":"メールアドレス",
-    "BUTTON":     "送信"
+    "INPUT_EMAIL": "メールアドレス",
+    "BUTTON": "送信"
   },
   "headerData": [
     {
@@ -95,34 +100,49 @@
   ],
   "WorkData": [
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar.svg"
+      "profession": "Framework",
+      "name": "Laravel",
+      "imgSrc": "/images/framework/Laravel.svg"
     },
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar3.svg"
+      "profession": "Framework",
+      "name": "Vue.js",
+      "imgSrc": "/images/framework/VueDotJs.svg"
     },
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar4.svg"
+      "profession": "Framework",
+      "name": "PHP",
+      "imgSrc": "/images/framework/PHP.svg"
     },
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar.svg"
+      "profession": "Framework",
+      "name": "Angular",
+      "imgSrc": "/images/framework/angular.svg"
     },
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar3.svg"
+      "profession": "Framework",
+      "name": "Go",
+      "imgSrc": "/images/framework/Go.svg"
     },
     {
-      "profession": "共同創設者",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar4.svg"
+      "profession": "Framework",
+      "name": "JavaScript",
+      "imgSrc": "/images/framework/JavaScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "TypeScript",
+      "imgSrc": "/images/framework/TypeScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Python",
+      "imgSrc": "/images/framework/Python.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "React",
+      "imgSrc": "/images/framework/React.svg"
     }
   ],
   "FeaturedData": [

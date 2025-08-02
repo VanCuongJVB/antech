@@ -12,7 +12,7 @@ const Aboutus = () => {
   return (
     <section id='About' className=' bg-cover bg-center overflow-hidden'>
       <div className='container mx-auto max-w-7xl px-4 relative z-1'>
-        <div className='p-12 bg-grey rounded-3xl'>
+        <div className='bg-grey rounded-3xl p-4 sm:p-12'>
           <Image
             src='/images/aboutus/dots.svg'
             width={100}

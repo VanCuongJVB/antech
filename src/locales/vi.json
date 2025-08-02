@@ -14,7 +14,59 @@
   "Blog": "Blog",
   "Docs": "Tài liệu",
   "contact_now": "Liên hệ ngay",
-  "we_work_in_several_verticals": "Chúng tôi hoạt động trong nhiều lĩnh vực.",
+  "we_work_in_several_verticals": "Chuyên môn của chúng tôi trải dài nhiều lĩnh vực.",
+  "WorkData": [
+    {
+      "profession": "Framework",
+      "name": "Laravel",
+      "imgSrc": "/images/framework/Laravel.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Vue.js",
+      "imgSrc": "/images/framework/VueDotJs.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "PHP",
+      "imgSrc": "/images/framework/PHP.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Angular",
+      "imgSrc": "/images/framework/angular.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Go",
+      "imgSrc": "/images/framework/Go.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "JavaScript",
+      "imgSrc": "/images/framework/JavaScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "TypeScript",
+      "imgSrc": "/images/framework/TypeScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Python",
+      "imgSrc": "/images/framework/Python.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "React",
+      "imgSrc": "/images/framework/React.svg"
+    }
+  ],
+  "Dedicated": {
+    "TITLE": "Kiến tạo giải pháp web thông minh – nâng tầm trải nghiệm số.",
+    "DESCRIPTION": "Chúng tôi đồng hành từ ý tưởng đến thực thi, mang lại website hiệu suất cao, linh hoạt và dễ mở rộng.",
+    "AUTHOR": "CEO"
+  },
   "TEAM": {
     "TITLE": "Đội ngũ của chúng tôi tin bạn xứng đáng với điều tốt nhất.",
     "SUBTITLE": "Với niềm đam mê và chuyên môn, đội ngũ đa dạng của chúng tôi hợp lực để mang đến những giải pháp sáng tạo vượt trên cả mong đợi.",
@@ -22,12 +74,12 @@
   },
   "featured_works": "Các dự án nổi bật.",
   "Contact": {
-    "TITLE":      "Liên hệ tôi",
-    "HEADING":    "Đưa doanh nghiệp của bạn lên tầm cao mới.",
-    "PARAGRAPH":  "Tôi sẵn sàng hỗ trợ bạn — vui lòng điền tên và email, mình sẽ phản hồi sớm nhất có thể.",
+    "TITLE": "Liên hệ tôi",
+    "HEADING": "Đưa doanh nghiệp của bạn lên tầm cao mới.",
+    "PARAGRAPH": "Tôi sẵn sàng hỗ trợ bạn — vui lòng điền tên và email, mình sẽ phản hồi sớm nhất có thể.",
     "INPUT_NAME": "Tên của bạn",
-    "INPUT_EMAIL":"Email của bạn",
-    "BUTTON":     "Gửi"
+    "INPUT_EMAIL": "Email của bạn",
+    "BUTTON": "Gửi"
   },
   "FAQ": {
     "TITLE": "Câu hỏi thường gặp",
@@ -42,7 +94,7 @@
     },
     "Q3": {
       "QUESTION": "Bạn đặt văn phòng ở đâu?",
-      "ANSWER": "Trụ sở chính của chúng tôi đặt tại Bangkok, Thái Lan, với đội ngũ từ xa hỗ trợ trên toàn cầu."
+      "ANSWER": "Trụ sở chính của chúng tôi đặt tại Nagoya, Nhật Bản, với đội ngũ từ xa hỗ trợ trên toàn cầu."
     }
   },
   "testimonials": {
@@ -91,38 +143,6 @@
       "imgSrc": "/images/aboutus/imgThree.svg",
       "paragraph": "Khám phá bộ sưu tập dự án tiêu biểu của chúng tôi, nơi sự đổi mới gặp gỡ sự tinh tế để mang đến trải nghiệm hấp dẫn trên cả web và di động.",
       "link": "Tìm hiểu thêm"
-    }
-  ],
-  "WorkData": [
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar.svg"
-    },
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar3.svg"
-    },
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar4.svg"
-    },
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar.svg"
-    },
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar3.svg"
-    },
-    {
-      "profession": "Đồng sáng lập",
-      "name": "John Doe",
-      "imgSrc": "/images/wework/avatar4.svg"
     }
   ],
   "FeaturedData": [

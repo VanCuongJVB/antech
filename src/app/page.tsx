@@ -34,6 +34,8 @@ export default function Home() {
       {/* <Manage /> */}
       <FAQ />
       <Testimonial />
+      <Dedicated />
+
       {/* <Articles /> */}
       {/* <Contact /> */}
       <Join />
