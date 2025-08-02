@@ -4,16 +4,18 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
 import { footerlinks } from '@/app/types/footerlinks'
+import { useI18n } from '@/utils/i18n'
 
 const footer = () => {
   // fetch data
 
   const [footerlinks, setFooterLinks] = useState<footerlinks[]>([])
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setFooterLinks(data.FooterLinksData)
@@ -22,7 +24,7 @@ const footer = () => {
       }
     }
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <div className='bg-black' id='first-section'>
