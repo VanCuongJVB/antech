@@ -4,6 +4,7 @@ import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import Aoscompo from '@/utils/aos'
+import { I18nProvider } from '@/utils/i18n'
 const font = Manrope({ subsets: ['latin'] })
 
 export default function RootLayout({
@@ -14,12 +15,14 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body className={`${font.className}`}>
-        <Aoscompo>
-          <Header />
-          {children}
-          <Footer />
-        </Aoscompo>
-        <ScrollToTop />
+        <I18nProvider>
+          <Aoscompo>
+            <Header />
+            {children}
+            <Footer />
+          </Aoscompo>
+          <ScrollToTop />
+        </I18nProvider>
       </body>
     </html>
   )

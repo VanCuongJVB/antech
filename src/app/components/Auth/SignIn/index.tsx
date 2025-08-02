@@ -7,9 +7,11 @@ import toast from 'react-hot-toast'
 import SocialSignIn from '../SocialSignIn'
 import Logo from '@/app/components/Layout/Header/Logo'
 import Loader from '@/app/components/Common/Loader'
+import { useI18n } from '@/utils/i18n'
 
 const Signin = () => {
   const router = useRouter()
+  const { t } = useI18n()
 
   const [loginData, setLoginData] = useState({
     email: '',
@@ -62,7 +64,7 @@ const Signin = () => {
         <div className='mb-[22px]'>
           <input
             type='email'
-            placeholder='Email'
+            placeholder={t('EMAIL')}
             onChange={(e) =>
               setLoginData({ ...loginData, email: e.target.value })
             }
@@ -72,7 +74,7 @@ const Signin = () => {
         <div className='mb-[22px]'>
           <input
             type='password'
-            placeholder='Password'
+            placeholder={t('PASSWORD')}
             onChange={(e) =>
               setLoginData({ ...loginData, password: e.target.value })
             }
@@ -84,7 +86,7 @@ const Signin = () => {
             onClick={loginUser}
             type='submit'
             className='bg-darkmode w-full py-3 rounded-lg text-18 font-medium border text-white border-darkmode hover:text-darkmode hover:bg-transparent'>
-            Sign In {loading && <Loader />}
+            {t('SIGN_IN')} {loading && <Loader />}
           </button>
         </div>
       </form>
@@ -97,7 +99,7 @@ const Signin = () => {
       <p className='text-body-secondary text-black text-base'>
         Not a member yet?{' '}
         <Link href='/' className='text-primary hover:underline'>
-          Sign Up
+          {t('SIGN_UP')}
         </Link>
       </p>
     </>
