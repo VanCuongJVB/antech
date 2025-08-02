@@ -24,6 +24,13 @@ const headerData: Record<string, HeaderItem[]> = {
     { label: 'Blog', href: '#Blog' },
     { label: 'Tài liệu', href: '/documentation' },
   ],
+  ja: [
+    { label: '私たちについて', href: '#About' },
+    { label: 'チーム', href: '#Team' },
+    { label: 'よくある質問', href: '#FAQ' },
+    { label: 'ブログ', href: '#Blog' },
+    { label: 'ドキュメント', href: '/documentation' },
+  ],
 }
 
 // about data
@@ -74,6 +81,29 @@ const Aboutdata: Record<string, aboutdata[]> = {
       link: 'Tìm hiểu thêm',
     },
   ],
+  ja: [
+    {
+      heading: '私たちについて。',
+      imgSrc: '/images/aboutus/imgOne.svg',
+      paragraph:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      link: '詳しく見る',
+    },
+    {
+      heading: 'サービス。',
+      imgSrc: '/images/aboutus/imgTwo.svg',
+      paragraph:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      link: '詳しく見る',
+    },
+    {
+      heading: '私たちの仕事。',
+      imgSrc: '/images/aboutus/imgThree.svg',
+      paragraph:
+        'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem',
+      link: '詳しく見る',
+    },
+  ],
 }
 
 // work data
@@ -93,6 +123,14 @@ const WorkData: Record<string, workdata[]> = {
     { profession: 'Đồng sáng lập', name: 'John Doe', imgSrc: '/images/wework/avatar.svg' },
     { profession: 'Đồng sáng lập', name: 'John Doe', imgSrc: '/images/wework/avatar3.svg' },
     { profession: 'Đồng sáng lập', name: 'John Doe', imgSrc: '/images/wework/avatar4.svg' },
+  ],
+  ja: [
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar.svg' },
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar3.svg' },
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar4.svg' },
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar.svg' },
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar3.svg' },
+    { profession: '共同創設者', name: 'John Doe', imgSrc: '/images/wework/avatar4.svg' },
   ],
 }
 
@@ -115,6 +153,18 @@ const FeaturedData: Record<string, featureddata[]> = {
       imgSrc: '/images/featured/feat1.jpg',
     },
     { heading: 'Hình nền 3D cho ứng dụng di động.', imgSrc: '/images/featured/feat2.jpg' },
+  ],
+  ja: [
+    {
+      heading: 'コンピュータブランドのブランドデザイン。',
+      imgSrc: '/images/featured/feat1.jpg',
+    },
+    { heading: 'モバイルアプリの3D壁紙。', imgSrc: '/images/featured/feat2.jpg' },
+    {
+      heading: 'コンピュータブランドのブランドデザイン。',
+      imgSrc: '/images/featured/feat1.jpg',
+    },
+    { heading: 'モバイルアプリの3D壁紙。', imgSrc: '/images/featured/feat2.jpg' },
   ],
 }
 
@@ -211,6 +261,53 @@ const PlansData: Record<string, any[]> = {
         templates: '800+ mẫu',
         view: 'Xem theo lịch',
         support: 'Hỗ trợ VIP 24/7',
+      },
+    },
+  ],
+  ja: [
+    {
+      heading: 'スタートアップ',
+      price: {
+        monthly: 19,
+        yearly: 190,
+      },
+      user: 'ユーザーごと',
+      features: {
+        profiles: '5つのソーシャルプロフィール',
+        posts: '各プロフィールにつき5件の予約投稿',
+        templates: '400以上のテンプレート',
+        view: 'カレンダー表示',
+        support: '24時間365日のサポート',
+      },
+    },
+    {
+      heading: 'ビジネス',
+      price: {
+        monthly: 29,
+        yearly: 290,
+      },
+      user: 'ユーザーごと',
+      features: {
+        profiles: '10のソーシャルプロフィール',
+        posts: '各プロフィールにつき5件の予約投稿',
+        templates: '600以上のテンプレート',
+        view: 'カレンダー表示',
+        support: '24時間365日のVIPサポート',
+      },
+    },
+    {
+      heading: 'エージェンシー',
+      price: {
+        monthly: 59,
+        yearly: 590,
+      },
+      user: 'ユーザーごと',
+      features: {
+        profiles: '100のソーシャルプロフィール',
+        posts: '各プロフィールにつき100件の予約投稿',
+        templates: '800以上のテンプレート',
+        view: 'カレンダー表示',
+        support: '24時間365日のVIPサポート',
       },
     },
   ],
@@ -314,6 +411,56 @@ const TestimonialsData: Record<string, testimonials[]> = {
       profession: 'CEO, Parkview Int.Ltd',
       comment:
         'Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước',
+      imgSrc: '/images/testimonial/user3.svg',
+      rating: 4,
+    },
+  ],
+  ja: [
+    {
+      name: 'Robert Fox',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
+      imgSrc: '/images/testimonial/user1.svg',
+      rating: 5,
+    },
+    {
+      name: 'Leslie Alexander',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
+      imgSrc: '/images/testimonial/user2.svg',
+      rating: 4,
+    },
+    {
+      name: 'Cody Fisher',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
+      imgSrc: '/images/testimonial/user3.svg',
+      rating: 4,
+    },
+    {
+      name: 'Robert Fox',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
+      imgSrc: '/images/testimonial/user1.svg',
+      rating: 4,
+    },
+    {
+      name: 'Leslie Alexander',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
+      imgSrc: '/images/testimonial/user2.svg',
+      rating: 4,
+    },
+    {
+      name: 'Cody Fisher',
+      profession: 'CEO, Parkview Int.Ltd',
+      comment:
+        'Lorem Ipsum の文章には多くのバリエーションがありますが、多くは何らかの形で変更され、挿入されたユーモアによって変化しています',
       imgSrc: '/images/testimonial/user3.svg',
       rating: 4,
     },
@@ -422,6 +569,56 @@ const ArticlesData: Record<string, articles[]> = {
       imgSrc: '/images/articles/article3.png',
     },
   ],
+  ja: [
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article.png',
+    },
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article2.png',
+    },
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article3.png',
+    },
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article.png',
+    },
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article2.png',
+    },
+    {
+      time: '5分',
+      heading: '私たちは Delia をリリースしました',
+      heading2: '今週の Webflow!',
+      name: 'Startupon に掲載',
+      date: '2025年2月19日',
+      imgSrc: '/images/articles/article3.png',
+    },
+  ],
 }
 
 // footer links data
@@ -496,10 +693,46 @@ const FooterLinksData: Record<string, footerlinks[]> = {
       ],
     },
   ],
+  ja: [
+    {
+      section: 'メニュー',
+      links: [
+        { label: '私たちについて', href: '#About' },
+        { label: 'チーム', href: '#Team' },
+        { label: 'よくある質問', href: '#FAQ' },
+        { label: 'ブログ', href: '#Blog' },
+      ],
+    },
+    {
+      section: 'カテゴリー',
+      links: [
+        { label: 'デザイン', href: '/' },
+        { label: 'モックアップ', href: '/' },
+        { label: 'すべて表示', href: '/' },
+        { label: 'ログイン', href: '/' },
+      ],
+    },
+    {
+      section: 'ページ',
+      links: [
+        { label: '404', href: '/' },
+        { label: '手順', href: '/' },
+        { label: 'ライセンス', href: '/' },
+      ],
+    },
+    {
+      section: 'その他',
+      links: [
+        { label: 'スタイルガイド', href: '/' },
+        { label: '変更履歴', href: '/' },
+      ],
+    },
+  ],
 }
 
 export const GET = (req: NextRequest) => {
-  const lang = req.nextUrl.searchParams.get('lang') === 'vi' ? 'vi' : 'en'
+  const langParam = req.nextUrl.searchParams.get('lang')
+  const lang = langParam === 'vi' || langParam === 'ja' ? langParam : 'en'
 
   return NextResponse.json({
     headerData: headerData[lang],

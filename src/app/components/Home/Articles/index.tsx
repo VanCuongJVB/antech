@@ -5,6 +5,7 @@ import Slider from 'react-slick'
 import Link from 'next/link'
 import { articles } from '@/app/types/articles'
 import ArticlesSkeleton from '../../Skeleton/Articles'
+import { useI18n } from '@/utils/i18n'
 
 const settings = {
   dots: true,
@@ -40,11 +41,12 @@ const Articles = () => {
 
   const [articles, setArticles] = useState<articles[]>([])
   const [loading, setLoading] = useState(true)
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setArticles(data.ArticlesData)
@@ -56,7 +58,7 @@ const Articles = () => {
     }
 
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <section id='Blog' className='relative bg-grey overflow-hidden'>

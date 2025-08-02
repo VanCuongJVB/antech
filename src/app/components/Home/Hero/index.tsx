@@ -1,3 +1,4 @@
+
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
@@ -5,7 +6,6 @@ import { useI18n } from '@/utils/i18n'
 
 const Hero = () => {
   const { t } = useI18n()
-
   const fadeUp = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 },
@@ -26,7 +26,7 @@ const Hero = () => {
             {...fadeUp}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            {t('TAGLINE')}
+            {t('HERO_TITLE')}
           </motion.h1>
           <motion.div
             {...fadeUp}
@@ -35,7 +35,7 @@ const Hero = () => {
           >
             <Link href='#contact'>
               <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer'>
-                Contact now
+                {t('CONTACT_NOW')}
               </button>
             </Link>
           </motion.div>

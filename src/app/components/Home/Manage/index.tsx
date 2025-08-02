@@ -4,14 +4,16 @@ import { Switch } from '@headlessui/react'
 import Image from 'next/image'
 import PlansSkeleton from '../../Skeleton/Plans'
 import Link from 'next/link'
+import { useI18n } from '@/utils/i18n'
 
 const Manage = () => {
   const [plans, setPlans] = useState<any[]>([])
   const [loading, setLoding] = useState(true)
+  const { lang } = useI18n()
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setPlans(data.PlansData)
@@ -22,7 +24,7 @@ const Manage = () => {
       }
     }
     fetchData()
-  }, [])
+  }, [lang])
 
   const [enabled, setEnabled] = useState(false)
   const [selectedCategory, setSelectedCategory] = useState<
