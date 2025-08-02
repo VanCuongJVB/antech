@@ -10,12 +10,14 @@ import MobileHeaderLink from './Navigation/MobileHeaderLink'
 import Signin from '@/app/components/Auth/SignIn'
 import SignUp from '@/app/components/Auth/SignUp'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { useI18n } from '@/utils/i18n'
 
 const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
   const [isSignInOpen, setIsSignInOpen] = useState(false)
   const [isSignUpOpen, setIsSignUpOpen] = useState(false)
+  const { lang } = useI18n()
 
   const navbarRef = useRef<HTMLDivElement>(null)
   const signInRef = useRef<HTMLDivElement>(null)
@@ -72,7 +74,7 @@ const Header: React.FC = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setHeaderData(data.headerData)
@@ -81,7 +83,7 @@ const Header: React.FC = () => {
       }
     }
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <header

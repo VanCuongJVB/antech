@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Slider from 'react-slick'
 import { workdata } from '@/app/types/workdata'
 import WorkSkeleton from '../../Skeleton/Work'
+import { useI18n } from '@/utils/i18n'
 
 const settings = {
   dots: false,
@@ -52,11 +53,12 @@ const Work = () => {
   // fetch work data
   const [work, setWork] = useState<workdata[]>([])
   const [loading, setLoding] = useState(true)
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setWork(data.WorkData)
@@ -68,7 +70,7 @@ const Work = () => {
     }
 
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <section

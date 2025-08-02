@@ -5,16 +5,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Icon } from '@iconify/react'
 import AboutSkeleton from '../../Skeleton/AboutUs'
+import { useI18n } from '@/utils/i18n'
 
 const Aboutus = () => {
   // fetch about data
   const [about, setAbout] = useState<aboutdata[]>([])
   const [loading, setLoading] = useState(true)
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`)
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setAbout(data.Aboutdata)
@@ -25,7 +27,7 @@ const Aboutus = () => {
       }
     }
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <section id='About' className=' bg-cover bg-center overflow-hidden'>
