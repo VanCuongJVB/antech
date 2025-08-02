@@ -17,7 +17,7 @@ import Insta from '@/app/components/Home/Insta'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Desgy Solutions',
+  title: 'AnTech',
 }
 
 export default function Home() {

@@ -31,7 +31,7 @@ const footer = () => {
           {/* COLUMN-1 */}
           <div className='col-span-4'>
             <h4 className='text-white text-3xl leading-9 mb-4 lg:mb-20'>
-              Desgy Solutions
+              AnTech
             </h4>
             <div className='flex items-center gap-4'>
               <div className='footer-icons'>
@@ -95,11 +95,11 @@ const footer = () => {
               <p className='text-center md:text-start text-white text-lg'>
                 @2025 - All Rights Reserved by{' '}
                 <Link
-                  href='https://getnextjstemplates.com/'
+                  href='https://antech.com/'
                   target='_blank'
                   className='hover:text-white/60 hover:underline'>
                   {' '}
-                  GetNextJsTemplates.com
+                  antech.com
                 </Link>
               </p>
             </div>

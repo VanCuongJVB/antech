@@ -1,8 +1,11 @@
 'use client'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useI18n } from '@/utils/i18n'
 
 const Hero = () => {
+  const { t } = useI18n()
+
   const fadeUp = {
     initial: { opacity: 0, y: 40 },
     animate: { opacity: 1, y: 0 },
@@ -17,13 +20,13 @@ const Hero = () => {
             {...fadeUp}
             className='py-2 px-5 bg-primary/15 rounded-full mb-6'
           >
-            <p className='text-primary text-lg font-bold'>CREATIVE AGENCY</p>
+            <p className='text-primary text-lg font-bold'>{t('DESIGN_AGENCY')}</p>
           </motion.div>
           <motion.h1
             {...fadeUp}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We turn bold ideas into digital reality.
+            {t('TAGLINE')}
           </motion.h1>
           <motion.div
             {...fadeUp}

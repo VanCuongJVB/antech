@@ -10,12 +10,14 @@ import MobileHeaderLink from './Navigation/MobileHeaderLink'
 import Signin from '@/app/components/Auth/SignIn'
 import SignUp from '@/app/components/Auth/SignUp'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import { useI18n, Locale } from '@/utils/i18n'
 
 const Header: React.FC = () => {
   const [navbarOpen, setNavbarOpen] = useState(false)
   const [sticky, setSticky] = useState(false)
   const [isSignInOpen, setIsSignInOpen] = useState(false)
   const [isSignUpOpen, setIsSignUpOpen] = useState(false)
+  const { t, locale, setLocale } = useI18n()
 
   const navbarRef = useRef<HTMLDivElement>(null)
   const signInRef = useRef<HTMLDivElement>(null)
@@ -85,15 +87,13 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full transition-all duration-300 border-b border-black/10 ${
-        sticky ? ' shadow-lg bg-white' : 'shadow-none'
-      }`}>
+      className={`fixed top-0 z-40 w-full transition-all duration-300 border-b border-black/10 ${sticky ? ' shadow-lg bg-white' : 'shadow-none'
+        }`}>
       <div className='lg:py-0 py-2'>
         <div className='container mx-auto max-w-(--breakpoint-xl) flex items-center justify-between px-4'>
           <div
-            className={`pr-16 lg:border-r border-black/10 duration-300 ${
-              sticky ? 'py-3' : 'py-7'
-            }`}>
+            className={`pr-16 lg:border-r border-black/10 duration-300 ${sticky ? 'py-3' : 'py-7'
+              }`}>
             <Logo />
           </div>
           <nav className='hidden lg:flex grow items-center gap-8 justify-center'>
@@ -102,15 +102,14 @@ const Header: React.FC = () => {
             ))}
           </nav>
           <div
-            className={`flex items-center gap-4 pl-16 lg:border-l border-black/10 duration-300 ${
-              sticky ? 'py-3' : 'py-7'
-            }`}>
-            <button
+            className={`flex items-center gap-4 pl-16 lg:border-l border-black/10 duration-300 ${sticky ? 'py-3' : 'py-7'
+              }`}>
+            {/* <button
               className='hidden lg:block bg-transparent text-darkmode border hover:bg-darkmode border-darkmode hover:text-white px-4 py-2 rounded-lg hover:cursor-pointer'
               onClick={() => {
                 setIsSignInOpen(true)
               }}>
-              Sign In
+              {t('SIGN_IN')}
             </button>
             {isSignInOpen && (
               <div className='fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50'>
@@ -135,7 +134,7 @@ const Header: React.FC = () => {
               onClick={() => {
                 setIsSignUpOpen(true)
               }}>
-              Sign Up
+              {t('SIGN_UP')}
             </button>
             {isSignUpOpen && (
               <div className='fixed top-0 left-0 w-full h-full bg-black/50 flex items-center justify-center z-50'>
@@ -154,7 +153,15 @@ const Header: React.FC = () => {
                   <SignUp />
                 </div>
               </div>
-            )}
+            )} */}
+            <select
+              value={locale}
+              onChange={(e) => setLocale(e.target.value as Locale)}
+              className="bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-200 shadow-sm border-gray-300 dark:border-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 px-3 py-2">
+              <option value="en">EN</option>
+              <option value="vi">VI</option>
+              <option value="ja">JA</option>
+            </select>
             <button
               onClick={() => setNavbarOpen(!navbarOpen)}
               className='block lg:hidden p-2 rounded-lg'
@@ -170,9 +177,8 @@ const Header: React.FC = () => {
         )}
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${
-            navbarOpen ? 'translate-x-0' : 'translate-x-full'
-          } z-50`}>
+          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${navbarOpen ? 'translate-x-0' : 'translate-x-full'
+            } z-50`}>
           <div className='flex items-center justify-between p-4'>
             <h2 className='text-lg font-bold text-midnight_text dark:text-midnight_text text-white'>
               <Logo />
@@ -198,7 +204,7 @@ const Header: React.FC = () => {
                   setIsSignInOpen(true)
                   setNavbarOpen(false)
                 }}>
-                Sign In
+                {t('SIGN_IN')}
               </Link>
               <Link
                 href='#'
@@ -207,7 +213,7 @@ const Header: React.FC = () => {
                   setIsSignUpOpen(true)
                   setNavbarOpen(false)
                 }}>
-                Sign Up
+                {t('SIGN_UP')}
               </Link>
             </div>
           </nav>
