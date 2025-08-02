@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { Icon } from '@iconify/react'
 import { testimonials } from '@/app/types/testimonials'
 import TestimonialSkeleton from '../../Skeleton/Testimonial'
+import { useI18n } from '@/utils/i18n'
 
 interface TestimonialType {
   name: string
@@ -103,11 +104,12 @@ const Testimonial: React.FC = () => {
   // fetch data
   const [testimonals, setTestimonials] = useState<testimonials[]>([])
   const [loading, setLoading] = useState(true)
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`, { cache: 'no-store' })
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setTestimonials(data.TestimonialsData)
@@ -118,7 +120,7 @@ const Testimonial: React.FC = () => {
       }
     }
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <section

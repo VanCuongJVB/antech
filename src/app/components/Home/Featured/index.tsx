@@ -6,6 +6,7 @@ import 'slick-carousel/slick/slick-theme.css'
 import Image from 'next/image'
 import { featureddata } from '@/app/types/featureddata'
 import FeaturedSkeleton from '../../Skeleton/Featured'
+import { useI18n } from '@/utils/i18n'
 
 function SampleNextArrow(props: { className: any; style: any; onClick: any }) {
   const { className, style, onClick } = props
@@ -82,11 +83,12 @@ const settings = {
 const Featured = () => {
   const [featured, setFeatured] = useState<featureddata[]>([])
   const [loading, setLoading] = useState(true)
+  const { lang } = useI18n()
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch('/api/data')
+        const res = await fetch(`/api/data?lang=${lang}`, { cache: 'no-store' })
         if (!res.ok) throw new Error('Failed to fetch')
         const data = await res.json()
         setFeatured(data.FeaturedData)
@@ -98,7 +100,7 @@ const Featured = () => {
     }
 
     fetchData()
-  }, [])
+  }, [lang])
 
   return (
     <section className="relative bg-deepSlate dark:bg-darkmode  after:absolute after:w-1/4 after:h-1/4 after:bg-[url('/images/wework/vector.svg')]  after:top-72 after:right-0 after:bg-no-repeat">
