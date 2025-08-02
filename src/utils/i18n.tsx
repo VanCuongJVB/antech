@@ -11,17 +11,17 @@ const translations = { en, vi, ja }
 interface I18nContextProps {
   locale: Locale
   setLocale: (loc: Locale) => void
-  t: (key: string) => string
+  t: (key: string) => any
 }
 
 const I18nContext = createContext<I18nContextProps | undefined>(undefined)
 
 export const I18nProvider = ({ children }: { children: ReactNode }) => {
-  const [locale, setLocale] = useState<Locale>('en')
+  const [locale, setLocale] = useState<Locale>('ja')
 
   const t = (key: string) => {
-    const dict = translations[locale] as Record<string, string>
-    return dict[key] || key
+    const dict = translations[locale] as Record<string, any>
+    return key.split('.').reduce((obj, part) => obj?.[part], dict) ?? key
   }
 
   return (

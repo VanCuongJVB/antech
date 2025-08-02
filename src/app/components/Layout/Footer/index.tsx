@@ -2,27 +2,12 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
 import { footerlinks } from '@/app/types/footerlinks'
+import { useI18n } from '@/utils/i18n'
 
 const footer = () => {
-  // fetch data
-
-  const [footerlinks, setFooterLinks] = useState<footerlinks[]>([])
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/api/data')
-        if (!res.ok) throw new Error('Failed to fetch')
-        const data = await res.json()
-        setFooterLinks(data.FooterLinksData)
-      } catch (error) {
-        console.error('Error fetching services:', error)
-      }
-    }
-    fetchData()
-  }, [])
+  const { t } = useI18n()
+  const footerLinks = t('FooterLinksData') as footerlinks[]
 
   return (
     <div className='bg-black' id='first-section'>
@@ -67,7 +52,7 @@ const footer = () => {
             </div>
           </div>
           {/* CLOUMN-2/3 */}
-          {footerlinks.map((item, i) => (
+          {footerLinks.map((item, i) => (
             <div key={i} className='group relative col-span-2'>
               <p className='text-white text-xl font-extrabold mb-9'>
                 {item.section}

@@ -33,9 +33,9 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className='mt-10'
           >
-            <Link href='#contact'>
+            <Link href='#'>
               <button className='bg-primary text-white text-xl font-semibold py-5 px-12 rounded-full hover:bg-darkmode hover:cursor-pointer'>
-                Contact now
+                {t('contact_now')}
               </button>
             </Link>
           </motion.div>
