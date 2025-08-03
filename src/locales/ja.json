@@ -15,6 +15,8 @@
   "Docs": "ドキュメント",
   "contact_now": "今すぐお問い合わせください。",
   "we_work_in_several_verticals": "私たちの専門性は多彩な領域に及びます。",
+  "pleasanter_intro_title": "Pleasanterプロジェクト",
+  "pleasanter_intro_description": "Pleasanterは、データとワークフローを効率的に整理できる柔軟なプロジェクト管理プラットフォームです。",
   "Dedicated": {
     "TITLE": "インテリジェントなWebソリューションを創造し、デジタル体験を向上させます。",
     "DESCRIPTION": "アイデアの段階から実行まで伴走し、高性能で柔軟性があり、拡張性の高いWebサイトを提供します。",
@@ -54,7 +56,10 @@
     "PARAGRAPH": "サポートはお任せください。お名前とメールアドレスをご入力いただければ、できるだけ早くご連絡いたします。",
     "INPUT_NAME": "お名前",
     "INPUT_EMAIL": "メールアドレス",
-    "BUTTON": "送信"
+    "BUTTON": "送信",
+    "BUTTON_SENDING": "送信中…",
+    "SUCCESS_MESSAGE": "ありがとうございます！後ほどご連絡いたします。",
+    "ERROR_MESSAGE": "エラーが発生しました。再度お試しください。"
   },
   "headerData": [
     {
@@ -75,7 +80,7 @@
     },
     {
       "label": "ドキュメント",
-      "href": "/documentation"
+      "href": "/#"
     }
   ],
   "Aboutdata": [
@@ -212,23 +217,44 @@
   ],
   "TestimonialsData": [
     {
-      "name": "ロバート・フォックス",
-      "profession": "Parkview Int.Ltd CEO",
-      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "name": "Robert Fox",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "彼らのおかげで、ウェブサイトの訪問者数が2か月で50％増加しました。",
       "imgSrc": "/images/testimonial/user1.svg",
       "rating": 5
     },
     {
-      "name": "レスリー・アレクサンダー",
-      "profession": "Parkview Int.Ltd CEO",
-      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "name": "Leslie Alexander",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "視覚的に魅力的で直感的なインターフェイスにより、顧客から非常に好評を得ました。",
       "imgSrc": "/images/testimonial/user2.svg",
       "rating": 4
     },
     {
-      "name": "コーディ・フィッシャー",
-      "profession": "Parkview Int.Ltd CEO",
-      "comment": "Lorem Ipsumのパッセージには多くのバリエーションがありますが、その大多数はジョークの挿入などで何らかの変更を受けています。",
+      "name": "Cody Fisher",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "迅速かつ丁寧なサポートで、安心してプロジェクトを任せることができました。",
+      "imgSrc": "/images/testimonial/user3.svg",
+      "rating": 4
+    },
+    {
+      "name": "Robert Fox",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "アイデアの段階から納品まで、あらゆる要望にプロフェッショナルに対応してくれました。",
+      "imgSrc": "/images/testimonial/user1.svg",
+      "rating": 4
+    },
+    {
+      "name": "Leslie Alexander",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "ウェブサイトのパフォーマンスが大幅に向上し、ページの読み込み速度が格段に速くなりました。",
+      "imgSrc": "/images/testimonial/user2.svg",
+      "rating": 4
+    },
+    {
+      "name": "Cody Fisher",
+      "profession": "CEO, Parkview Int.Ltd",
+      "comment": "モバイルでの操作性が非常にスムーズで、ユーザー体験が大きく向上しました。",
       "imgSrc": "/images/testimonial/user3.svg",
       "rating": 4
     }

@@ -15,6 +15,8 @@
   "Docs": "Docs",
   "contact_now": "Contact now",
   "we_work_in_several_verticals": "Our expertise spans multiple domains.",
+  "pleasanter_intro_title": "Pleasanter project",
+  "pleasanter_intro_description": "Pleasanter is a flexible project management platform that helps teams organize data and workflows efficiently.",
   "Dedicated": {
     "TITLE": "Creating intelligent web solutions – elevating digital experiences.",
     "DESCRIPTION": "We accompany you from ideation to execution, delivering high-performance, flexible, and scalable websites.",
@@ -64,7 +66,7 @@
     },
     {
       "label": "Docs",
-      "href": "/documentation"
+      "href": "/#"
     }
   ],
   "Aboutdata": [
@@ -88,15 +90,51 @@
     }
   ],
   "WorkData": [
-    { "profession": "Framework", "name": "Laravel",    "imgSrc": "/images/framework/Laravel.svg"   },
-    { "profession": "Framework", "name": "Vue.js",      "imgSrc": "/images/framework/VueDotJs.svg"   },
-    { "profession": "Framework", "name": "PHP",         "imgSrc": "/images/framework/PHP.svg"        },
-    { "profession": "Framework", "name": "Angular",     "imgSrc": "/images/framework/angular.svg"    },
-    { "profession": "Framework", "name": "Go",          "imgSrc": "/images/framework/Go.svg"         },
-    { "profession": "Framework", "name": "JavaScript",  "imgSrc": "/images/framework/JavaScript.svg" },
-    { "profession": "Framework", "name": "TypeScript",  "imgSrc": "/images/framework/TypeScript.svg" },
-    { "profession": "Framework", "name": "Python",      "imgSrc": "/images/framework/Python.svg"     },
-    { "profession": "Framework", "name": "React",       "imgSrc": "/images/framework/React.svg"      }
+    {
+      "profession": "Framework",
+      "name": "Laravel",
+      "imgSrc": "/images/framework/Laravel.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Vue.js",
+      "imgSrc": "/images/framework/VueDotJs.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "PHP",
+      "imgSrc": "/images/framework/PHP.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Angular",
+      "imgSrc": "/images/framework/angular.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Go",
+      "imgSrc": "/images/framework/Go.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "JavaScript",
+      "imgSrc": "/images/framework/JavaScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "TypeScript",
+      "imgSrc": "/images/framework/TypeScript.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "Python",
+      "imgSrc": "/images/framework/Python.svg"
+    },
+    {
+      "profession": "Framework",
+      "name": "React",
+      "imgSrc": "/images/framework/React.svg"
+    }
   ],
   "FeaturedData": [
     {
@@ -172,48 +210,51 @@
     "PARAGRAPH": "I’m here to help—drop your name and email below, and I’ll get back to you as soon as possible.",
     "INPUT_NAME": "Your name",
     "INPUT_EMAIL": "Your email",
-    "BUTTON": "Send"
+    "BUTTON": "Send",
+    "BUTTON_SENDING": "Sending…",
+    "SUCCESS_MESSAGE": "Thank you! We will be in touch soon.",
+    "ERROR_MESSAGE": "Oops! Something went wrong."
   },
   "TestimonialsData": [
     {
       "name": "Robert Fox",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "Thanks to their team, our website traffic increased by 50% in just two months.",
       "imgSrc": "/images/testimonial/user1.svg",
       "rating": 5
     },
     {
       "name": "Leslie Alexander",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "The visually appealing, intuitive interface received overwhelmingly positive feedback from our customers.",
       "imgSrc": "/images/testimonial/user2.svg",
       "rating": 4
     },
     {
       "name": "Cody Fisher",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "Their prompt and attentive support gave me complete confidence throughout the project.",
       "imgSrc": "/images/testimonial/user3.svg",
       "rating": 4
     },
     {
       "name": "Robert Fox",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "From concept to delivery, they met every requirement with true professionalism.",
       "imgSrc": "/images/testimonial/user1.svg",
       "rating": 4
     },
     {
       "name": "Leslie Alexander",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "Our site’s performance was dramatically optimized, with much faster and more stable load times.",
       "imgSrc": "/images/testimonial/user2.svg",
       "rating": 4
     },
     {
       "name": "Cody Fisher",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour",
+      "comment": "The mobile experience is incredibly smooth, significantly improving user engagement on handheld devices.",
       "imgSrc": "/images/testimonial/user3.svg",
       "rating": 4
     }

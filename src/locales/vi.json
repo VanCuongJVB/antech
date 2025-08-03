@@ -15,6 +15,8 @@
   "Docs": "Tài liệu",
   "contact_now": "Liên hệ ngay",
   "we_work_in_several_verticals": "Chuyên môn của chúng tôi trải dài nhiều lĩnh vực.",
+  "pleasanter_intro_title": "Dự án Pleasanter",
+  "pleasanter_intro_description": "Pleasanter là nền tảng quản lý dự án linh hoạt giúp doanh nghiệp tổ chức dữ liệu và quy trình một cách hiệu quả.",
   "WorkData": [
     {
       "profession": "Framework",
@@ -79,7 +81,10 @@
     "PARAGRAPH": "Tôi sẵn sàng hỗ trợ bạn — vui lòng điền tên và email, mình sẽ phản hồi sớm nhất có thể.",
     "INPUT_NAME": "Tên của bạn",
     "INPUT_EMAIL": "Email của bạn",
-    "BUTTON": "Gửi"
+    "BUTTON": "Gửi",
+    "BUTTON_SENDING": "Đang gửi…",
+    "SUCCESS_MESSAGE": "Cảm ơn bạn! Chúng tôi sẽ sớm liên hệ lại.",
+    "ERROR_MESSAGE": "Có lỗi xảy ra, vui lòng thử lại."
   },
   "FAQ": {
     "TITLE": "Câu hỏi thường gặp",
@@ -122,7 +127,7 @@
     },
     {
       "label": "Tài liệu",
-      "href": "/documentation"
+      "href": "/#"
     }
   ],
   "Aboutdata": [
@@ -214,42 +219,42 @@
     {
       "name": "Robert Fox",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Nhờ đội ngũ của họ, website của chúng tôi đã tăng 50% lượng truy cập chỉ sau 2 tháng triển khai.",
       "imgSrc": "/images/testimonial/user1.svg",
       "rating": 5
     },
     {
       "name": "Leslie Alexander",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Giao diện đẹp mắt và trực quan, khách hàng phản hồi rất tích cực về trải nghiệm trên trang.",
       "imgSrc": "/images/testimonial/user2.svg",
       "rating": 4
     },
     {
       "name": "Cody Fisher",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Hỗ trợ tận tâm, phản hồi nhanh chóng – tôi hoàn toàn yên tâm khi làm việc với đội ngũ này.",
       "imgSrc": "/images/testimonial/user3.svg",
       "rating": 4
     },
     {
       "name": "Robert Fox",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Từ giai đoạn lên ý tưởng đến khi bàn giao, mọi yêu cầu của chúng tôi đều được đáp ứng một cách chuyên nghiệp.",
       "imgSrc": "/images/testimonial/user1.svg",
       "rating": 4
     },
     {
       "name": "Leslie Alexander",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Hiệu suất trang web được tối ưu rõ rệt, tốc độ tải trang nhanh hơn và ổn định hơn trước rất nhiều.",
       "imgSrc": "/images/testimonial/user2.svg",
       "rating": 4
     },
     {
       "name": "Cody Fisher",
       "profession": "CEO, Parkview Int.Ltd",
-      "comment": "Có nhiều biến thể của Lorem Ipsum, nhưng phần lớn đã bị thay đổi theo một cách nào đó do chèn thêm yếu tố hài hước",
+      "comment": "Trải nghiệm mobile mượt mà, giao diện linh hoạt giúp chúng tôi thu hút thêm khách hàng trên thiết bị di động.",
       "imgSrc": "/images/testimonial/user3.svg",
       "rating": 4
     }
