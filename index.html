@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antech-QT - デジタルソリューション</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo-full.svg" alt="Antech-QT - Digital Solutions" height="50">
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#company" data-i18n="nav_company">会社概要</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">お問い合わせ</a></li>
+                    <li>
+                        <select id="language-select" class="lang-select">
+                            <option value="ja">日本語</option>
+                            <option value="vi">Tiếng Việt</option>
+                            <option value="en">English</option>
+                        </select>
+                    </li>
+                </ul>
+<style>
+
+    .lang-select {
+        margin-left: 1.2rem;
+        padding: 0.35rem 1.7rem 0.35rem 2.2rem;
+        border-radius: 6px;
+        border: 1px solid #e0e0e0;
+        background: #fff url('data:image/svg+xml;utf8,<svg fill="%23333" height="20" viewBox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>') no-repeat right 0.7rem center/1.1em auto;
+        font-size: 1rem;
+        color: #333;
+        font-weight: 500;
+        min-width: 120px;
+        box-shadow: 0 2px 8px rgba(60,60,60,0.06);
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: border 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        outline: none;
+        position: relative;
+    }
+    .lang-select:focus, .lang-select:hover {
+        border: 1.5px solid #1a73e8;
+        box-shadow: 0 4px 16px rgba(26,115,232,0.08);
+    }
+    .lang-select option {
+        color: #222;
+        background: #fff;
+    }
+
+</style>
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-i18n="hero_title">デジタルイノベーションで未来を創造</h1>
+            <p data-i18n="hero_desc">最先端技術とクリエイティブなアプローチで、ビジネスの可能性を最大化するソリューションを提供します。</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="cta-button" data-i18n="hero_contact">お問い合わせ</a>
+                <!-- <a href="#projects" class="cta-button cta-button-outline">実績を見る</a> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section expertise">
+        <div class="container">
+            <h2 class="section-title fade-in-up" data-i18n="expertise_title">専門技術領域</h2>
+            <p class="section-subtitle fade-in-up" data-i18n="expertise_subtitle">多様な技術スタックと豊富な経験で、お客様のビジネス課題を解決します。</p>
+            <div class="expertise-grid">
+                <div class="expertise-card fade-in-up">
+                    <div class="expertise-icon">🌐</div>
+                    <h3 data-i18n="expertise_web_title">Web開発</h3>
+                    <p data-i18n="expertise_web_desc">モダンなフレームワークを活用し、パフォーマンスと拡張性を重視したWebアプリケーションを開発します。React、Vue.js、Node.jsなどの最新技術を駆使。</p>
+                </div>
+                <div class="expertise-card fade-in-up">
+                    <div class="expertise-icon">💻</div>
+                    <h3 data-i18n="expertise_lowcode_title">Pleasanterローコード開発</h3>
+                    <p data-i18n="expertise_lowcode_desc">ローコード開発とは、プログラミングの知識が少なくても、比較的容易にWebアプリケーションを開発できる手法のことです。プリザンターは、特に日本製のオープンソースのローコード開発ツールとして知られています。</p>
+                </div>
+                <div class="expertise-card fade-in-up">
+                    <div class="expertise-icon">⚡</div>
+                    <h3 data-i18n="expertise_dx_title">デジタルトランスフォーメーション</h3>
+                    <p data-i18n="expertise_dx_desc">既存のビジネスプロセスをデジタル化し、効率性と生産性を向上。AIや機械学習技術の導入もサポートします。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section -->
+    <!-- <section id="projects" class="section project-showcase">
+        <div class="container">
+            <h2 class="section-title fade-in-up">代表プロジェクト</h2>
+            <p class="section-subtitle fade-in-up">お客様のビジネス成長に貢献した実績をご紹介します。</p>
+            <div class="project-card fade-in-up">
+                <div class="project-image">
+                    <img src="https://pleasanter.org/pleasanter/assets/images/shared/fig_hayato.svg" alt="Pleasanter Logo" class="pleasanter-logo">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">アップデート中。。。</h3>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Team Section -->
+    <section id="team" class="section team">
+        <div class="container">
+            <h2 class="section-title fade-in-up" data-i18n="team_title">エキスパートチーム</h2>
+            <p class="section-subtitle fade-in-up" data-i18n="team_subtitle">多様な専門性を持つプロフェッショナルが、お客様のプロジェクトを成功に導きます。</p>
+            <div class="team-grid">
+                <div class="team-member fade-in-up">
+                    <div class="team-avatar">👨‍💼</div>
+                    <h3 data-i18n="team_exec_title">エグゼクティブ</h3>
+                    <p data-i18n="team_exec_desc">戦略立案と事業推進のリーダーシップ</p>
+                </div>
+                <div class="team-member fade-in-up">
+                    <div class="team-avatar">👩‍💻</div>
+                    <h3 data-i18n="team_dev_title">開発エンジニア</h3>
+                    <p data-i18n="team_dev_desc">最新技術に精通したフルスタック開発者</p>
+                </div>
+                <div class="team-member fade-in-up">
+                    <div class="team-avatar">🎨</div>
+                    <h3 data-i18n="team_lowcode_title">Pleasanterローコード開発</h3>
+                    <p data-i18n="team_lowcode_desc">お客様との対面で、要望をヒアリングしながら、ドラッグ＆ドロップなどの操作でアプリケーションを開発</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Section -->
+    <section id="company" class="section company">
+        <div class="container">
+            <h2 class="section-title fade-in-up" data-i18n="company_title">会社概要</h2>
+            <p class="section-subtitle fade-in-up" data-i18n="company_subtitle">デジタルイノベーションを推進するAntech-QTの企業理念と沿革をご紹介します。</p>
+            <div class="company-content">
+                <div class="company-info fade-in-up">
+                    <div class="company-card">
+                        <div class="company-icon">🏢</div>
+                        <h3 data-i18n="company_philosophy_title">企業理念</h3>
+                        <p data-i18n="company_philosophy_desc">「技術で人々の生活を豊かにする」をミッションに、最先端のデジタル技術を活用して、お客様のビジネス課題を解決し、社会の発展に貢献します。</p>
+                    </div>
+                    <div class="company-card">
+                        <div class="company-icon">📍</div>
+                        <h3 data-i18n="company_contact_title">お問い合わせ情報</h3>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <strong data-i18n="company_address_label">住所:</strong> <span data-i18n="company_address">ベトナム国クアンチー省Gio Linh社Truc Lam村</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong data-i18n="company_phone_label">電話:</strong> <span data-i18n="company_phone">+84-886-160-515</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong data-i18n="company_email_label">メール:</strong> <span data-i18n="company_email">info@antech-qt.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong data-i18n="company_hours_label">営業時間:</strong> <span data-i18n="company_hours">平日 9:00-18:00 (JST)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="section faq">
+        <div class="container">
+            <h2 class="section-title fade-in-up" data-i18n="faq_title">よくあるご質問</h2>
+            <div class="faq-list">
+                <div class="faq-item fade-in-up">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span data-i18n="faq_q1">プロジェクトの開発期間はどの程度ですか？</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <span data-i18n="faq_a1">プロジェクトの規模と複雑さによって異なりますが、小規模なWebサイトで2-4週間、中規模なWebアプリケーションで2-4ヶ月、大規模なエンタープライズシステムで6-12ヶ月程度が目安となります。詳細なスケジュールは初回コンサルテーションで提示いたします。</span>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span data-i18n="faq_q2">プロジェクト完了後のサポートは提供されますか？</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <span data-i18n="faq_a2">はい、プロジェクト完了後も継続的な保守・運用サポートを提供しています。技術サポート、セキュリティアップデート、機能追加など、お客様のニーズに応じたサポートプランをご用意しております。</span>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span data-i18n="faq_q3">料金体系について教えてください</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <span data-i18n="faq_a3">プロジェクトの要件、規模、期間に基づいてカスタム見積もりを提供しています。固定価格、時間単価、継続契約など、お客様の予算とニーズに最適な料金プランをご提案いたします。</span>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-up">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <span data-i18n="faq_q4">どのような技術スタックを使用していますか？</span>
+                        <div class="faq-icon">+</div>
+                    </div>
+                    <div class="faq-answer">
+                        <span data-i18n="faq_a4">ローコード：Pleasanter | フロントエンド：React、Vue.js、Angular | バックエンド：PHP、Python、 | データベース：PostgreSQL、MySQL,　SQLServer | クラウド：AWS、Azure、Google など、プロジェクトに最適な技術を選択します。</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title fade-in-up" data-i18n="contact_title">お気軽にご相談ください</h2>
+            <p class="section-subtitle fade-in-up" data-i18n="contact_subtitle">プロジェクトのご相談から技術的な質問まで、専門チームがサポートいたします。</p>
+            <form class="contact-form fade-in-up">
+                <div class="form-group">
+                    <label for="name" data-i18n="contact_name_label">お名前 *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="contact_email_label">メールアドレス *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="company" data-i18n="contact_company_label">会社名</label>
+                    <input type="text" id="company" name="company">
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="contact_message_label">お問い合わせ内容 *</label>
+                    <textarea id="message" name="message" rows="6" required data-i18n-placeholder="contact_message_placeholder" placeholder="プロジェクトの詳細やご質問をお聞かせください..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn" data-i18n="contact_submit">お問い合わせを送信</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p data-i18n="footer">&copy; 2025 Antech-QT. All rights reserved. | プライバシーポリシー | 利用規約</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
