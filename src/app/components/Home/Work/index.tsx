@@ -47,9 +47,9 @@ const Work: React.FC = () => {
         </h3>
 
         {/* GRID: intro | slider */}
-        <div className='grid grid-cols-1 lg:grid-cols-2 gap-8 items-start'>
+        <div className=' gap-8 items-start'>
           {/* LEFT: PleasanterIntro */}
-          <div className='flex justify-center lg:justify-start'>
+          <div className="max-w-fit mx-auto">
             <PleasanterIntro />
           </div>
 

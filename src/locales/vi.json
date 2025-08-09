@@ -17,6 +17,18 @@
   "we_work_in_several_verticals": "Chuyên môn của chúng tôi trải dài nhiều lĩnh vực.",
   "pleasanter_intro_title": "Dự án Pleasanter",
   "pleasanter_intro_description": "Pleasanter là nền tảng quản lý dự án linh hoạt giúp doanh nghiệp tổ chức dữ liệu và quy trình một cách hiệu quả.",
+  "HQ": {
+    "BADGE": "Trụ sở chính",
+    "TITLE": "Trụ sở chính tại Việt Nam",
+    "COMPANY_NAME_LABEL": "Tên công ty",
+    "COMPANY_NAME_VALUE": "Công ty TNHH Công nghệ và Dịch vụ AN TECH",
+    "TAX_CODE_LABEL": "Mã số thuế",
+    "TAX_CODE_VALUE": "3200753609",
+    "TAX_CODE_LINK_TEXT": "Mã số thuế {{code}}",
+    "ADDRESS_LABEL": "Địa chỉ",
+    "ADDRESS_VALUE": "Quảng Trị, Việt Nam",
+    "REMOTE_NOTE": "Đội ngũ làm việc từ xa của chúng tôi hỗ trợ khách hàng trên toàn cầu."
+  },
   "WorkData": [
     {
       "profession": "Framework",
@@ -99,7 +111,7 @@
     },
     "Q3": {
       "QUESTION": "Bạn đặt văn phòng ở đâu?",
-      "ANSWER": "Trụ sở chính của chúng tôi đặt tại Nagoya, Nhật Bản, với đội ngũ từ xa hỗ trợ trên toàn cầu."
+      "ANSWER": "Trụ sở chính của chúng tôi đặt tại Quảng Trị, Việt Nam, với đội ngũ từ xa hỗ trợ trên toàn cầu."
     }
   },
   "testimonials": {
@@ -118,16 +130,16 @@
       "href": "#Team"
     },
     {
+      "label": "Dự án",
+      "href": "#Featured"
+    },
+    {
       "label": "Câu hỏi",
       "href": "#FAQ"
     },
     {
-      "label": "Blog",
-      "href": "#Blog"
-    },
-    {
-      "label": "Tài liệu",
-      "href": "/#"
+      "label": "Liên hệ",
+      "href": "#Contact"
     }
   ],
   "Aboutdata": [
@@ -328,57 +340,6 @@
         {
           "label": "Blog",
           "href": "#Blog"
-        }
-      ]
-    },
-    {
-      "section": "Danh mục",
-      "links": [
-        {
-          "label": "Thiết kế",
-          "href": "/"
-        },
-        {
-          "label": "Mockup",
-          "href": "/"
-        },
-        {
-          "label": "Xem tất cả",
-          "href": "/"
-        },
-        {
-          "label": "Đăng nhập",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "Trang",
-      "links": [
-        {
-          "label": "404",
-          "href": "/"
-        },
-        {
-          "label": "Hướng dẫn",
-          "href": "/"
-        },
-        {
-          "label": "Giấy phép",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "Khác",
-      "links": [
-        {
-          "label": "Hướng dẫn phong cách",
-          "href": "/"
-        },
-        {
-          "label": "Changelog",
-          "href": "/"
         }
       ]
     }

@@ -41,7 +41,7 @@
     },
     "Q3": {
       "QUESTION": "Where are you located?",
-      "ANSWER": "Our headquarters are in NagoYa, Japan, with remote teams available globally."
+      "ANSWER": "Our headquarters are in Quang Tri, Viet Nam, with remote teams available globally."
     }
   },
   "testimonials": {
@@ -57,18 +57,30 @@
       "href": "#Team"
     },
     {
+      "label": "Projects",
+      "href": "#Featured"
+    },
+    {
       "label": "FAQ",
       "href": "#FAQ"
     },
     {
-      "label": "Blog",
-      "href": "#Blog"
-    },
-    {
-      "label": "Docs",
-      "href": "/#"
+      "label": "Contact",
+      "href": "#Contact"
     }
   ],
+  "HQ": {
+    "BADGE": "Headquarters",
+    "TITLE": "Vietnam Headquarters",
+    "COMPANY_NAME_LABEL": "Company name",
+    "COMPANY_NAME_VALUE": "AN TECH Technology and Services Co., Ltd.",
+    "TAX_CODE_LABEL": "Tax code",
+    "TAX_CODE_VALUE": "3200753609",
+    "TAX_CODE_LINK_TEXT": "Tax code {{code}}",
+    "ADDRESS_LABEL": "Address",
+    "ADDRESS_VALUE": "Quang Tri, Vietnam",
+    "REMOTE_NOTE": "Our remote team supports customers worldwide."
+  },
   "Aboutdata": [
     {
       "heading": "About us.",
@@ -328,57 +340,6 @@
         {
           "label": "Blog",
           "href": "#Blog"
-        }
-      ]
-    },
-    {
-      "section": "Category",
-      "links": [
-        {
-          "label": "Design",
-          "href": "/"
-        },
-        {
-          "label": "Mockup",
-          "href": "/"
-        },
-        {
-          "label": "View all",
-          "href": "/"
-        },
-        {
-          "label": "Log In",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "Pages",
-      "links": [
-        {
-          "label": "404",
-          "href": "/"
-        },
-        {
-          "label": "Instructions",
-          "href": "/"
-        },
-        {
-          "label": "License",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "Others",
-      "links": [
-        {
-          "label": "Styleguide",
-          "href": "/"
-        },
-        {
-          "label": "Changelog",
-          "href": "/"
         }
       ]
     }

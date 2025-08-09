@@ -180,7 +180,7 @@ const Header: React.FC = () => {
                 <MobileHeaderLink key={index} item={item} />
               )
             )}
-            <div className='mt-4 flex flex-col space-y-4 w-full'>
+            {/* <div className='mt-4 flex flex-col space-y-4 w-full'>
               <Link
                 href='#'
                 className='bg-transparent border border-primary text-primary px-4 py-2 rounded-lg hover:bg-blue-600 hover:text-white'
@@ -199,7 +199,7 @@ const Header: React.FC = () => {
                 }}>
                 {t('SIGN_UP')}
               </Link>
-            </div>
+            </div> */}
           </nav>
         </div>
       </div>

@@ -33,7 +33,7 @@ export default function Home() {
       <Featured />
       {/* <Manage /> */}
       <FAQ />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Dedicated />
 
       {/* <Articles /> */}

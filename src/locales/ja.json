@@ -15,7 +15,7 @@
   "Docs": "ドキュメント",
   "contact_now": "今すぐお問い合わせください。",
   "we_work_in_several_verticals": "私たちの専門性は多彩な領域に及びます。",
-  "pleasanter_intro_title": "Pleasanterプロジェクト",
+  "pleasanter_intro_title": "Pleasanter ローコード/ノーコード開発",
   "pleasanter_intro_description": "Pleasanterは、データとワークフローを効率的に整理できる柔軟なプロジェクト管理プラットフォームです。",
   "Dedicated": {
     "TITLE": "インテリジェントなWebソリューションを創造し、デジタル体験を向上させます。",
@@ -41,7 +41,7 @@
     },
     "Q3": {
       "QUESTION": "所在地はどこですか？",
-      "ANSWER": "私たちの本社は日本の名古屋市にあり、リモートチームも世界中で対応しています。"
+      "ANSWER": "当社の本社はベトナムのクアンチ省にあり、リモートチームが世界中のお客様をサポートしています。"
     }
   },
   "testimonials": {
@@ -71,18 +71,30 @@
       "href": "#Team"
     },
     {
+      "label": "プロジェクト",
+      "href": "#Featured"
+    },
+    {
       "label": "よくある質問",
       "href": "#FAQ"
     },
     {
-      "label": "ブログ",
-      "href": "#Blog"
-    },
-    {
-      "label": "ドキュメント",
-      "href": "/#"
+      "label": "お問い合わせ",
+      "href": "#Contact"
     }
   ],
+  "HQ": {
+    "BADGE": "本社",
+    "TITLE": "ベトナム本社",
+    "COMPANY_NAME_LABEL": "会社名",
+    "COMPANY_NAME_VALUE": "AN TECH 技術サービス有限会社",
+    "TAX_CODE_LABEL": "納税者番号",
+    "TAX_CODE_VALUE": "3200753609",
+    "TAX_CODE_LINK_TEXT": "納税者番号 {{code}}",
+    "ADDRESS_LABEL": "住所",
+    "ADDRESS_VALUE": "ベトナム・クアンチ省",
+    "REMOTE_NOTE": "当社のリモートチームが世界中のお客様をサポートしています。"
+  },
   "Aboutdata": [
     {
       "heading": "私たちについて。",
@@ -288,57 +300,6 @@
         {
           "label": "ブログ",
           "href": "#Blog"
-        }
-      ]
-    },
-    {
-      "section": "カテゴリ",
-      "links": [
-        {
-          "label": "デザイン",
-          "href": "/"
-        },
-        {
-          "label": "モックアップ",
-          "href": "/"
-        },
-        {
-          "label": "すべて表示",
-          "href": "/"
-        },
-        {
-          "label": "ログイン",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "ページ",
-      "links": [
-        {
-          "label": "404",
-          "href": "/"
-        },
-        {
-          "label": "説明書",
-          "href": "/"
-        },
-        {
-          "label": "ライセンス",
-          "href": "/"
-        }
-      ]
-    },
-    {
-      "section": "その他",
-      "links": [
-        {
-          "label": "スタイルガイド",
-          "href": "/"
-        },
-        {
-          "label": "更新履歴",
-          "href": "/"
         }
       ]
     }
