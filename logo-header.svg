@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140" height="40" viewBox="0 0 140 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0052CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4ECDC4;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0052CC;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003B8B;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Logo Icon (smaller) -->
+  <g transform="translate(2, 5)">
+    <circle cx="15" cy="15" r="13" fill="url(#headerGradient)" opacity="0.1"/>
+    <path d="M8 22 L15 8 L22 22 L19 22 L15 15 L11 22 Z" fill="url(#headerGradient)"/>
+    <rect x="6" y="24" width="3" height="1.5" fill="url(#headerGradient)" rx="0.75"/>
+    <rect x="10" y="24" width="4" height="1.5" fill="url(#headerGradient)" rx="0.75"/>
+    <rect x="16" y="24" width="3" height="1.5" fill="url(#headerGradient)" rx="0.75"/>
+    <rect x="20" y="24" width="3" height="1.5" fill="url(#headerGradient)" rx="0.75"/>
+  </g>
+  
+  <!-- Company Name -->
+  <g transform="translate(38, 8)">
+    <text x="0" y="16" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="#0052CC">
+      Antech
+    </text>
+    <rect x="56" y="6" width="1.5" height="14" fill="#4ECDC4" rx="0.75"/>
+    <text x="62" y="16" font-family="Inter, sans-serif" font-size="16" font-weight="700" fill="url(#textGradient)">
+      QT
+    </text>
+  </g>
+</svg>
