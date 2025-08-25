@@ -12,11 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
             expertise_title: '専門技術領域',
             expertise_subtitle: '多様な技術スタックと豊富な経験で、お客様のビジネス課題を解決します。',
             expertise_web_title: 'Web開発',
-            expertise_web_desc: 'モダンなフレームワークを活用し、パフォーマンスと拡張性を重視したWebアプリケーションを開発します。React、Vue.js、Node.jsなどの最新技術を駆使。',
+            expertise_web_desc: 'モダンなフレームワークを活用し、パフォーマンスと拡張性を重視したWebアプリケーションを開発します。PHP、React、Vue.js、Node.jsなどの最新技術を駆使。',
             expertise_lowcode_title: 'Pleasanterローコード開発',
             expertise_lowcode_desc: 'ローコード開発とは、プログラミングの知識が少なくても、比較的容易にWebアプリケーションを開発できる手法のことです。プリザンターは、特に日本製のオープンソースのローコード開発ツールとして知られています。',
             expertise_dx_title: 'デジタルトランスフォーメーション',
-            expertise_dx_desc: '既存のビジネスプロセスをデジタル化し、効率性と生産性を向上。AIや機械学習技術の導入もサポートします。',
+            expertise_dx_desc: '既存のビジネスプロセスをデジタル化し、効率性と生産性を向上。',
             team_title: 'エキスパートチーム',
             team_subtitle: '多様な専門性を持つプロフェッショナルが、お客様のプロジェクトを成功に導きます。',
             team_exec_title: 'エグゼクティブ',
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function() {
             footer: '&copy; 2025 Antech-QT. All rights reserved. | Privacy Policy | Terms of Use',
         }
     };
-
+ 
     function setLanguage(lang) {
         const dict = translations[lang] || translations['ja'];
         // Update text content
@@ -188,7 +188,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Update <html lang>
         document.documentElement.lang = lang;
     }
-
+ 
     // Language select event
     const langSelect = document.getElementById('language-select');
     if (langSelect) {
@@ -198,7 +198,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Set default language on load
         setLanguage(langSelect.value);
     }
-
+ 
     // ...existing code...
     // Smooth scrolling for navigation links
     const navLinks = document.querySelectorAll('a[href^="#"]');
@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
+ 
     // ...existing code...
     // Fade in animation on scroll
     const fadeElements = document.querySelectorAll('.fade-in-up');
@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', function() {
             observer.observe(el);
         });
     }
-
+ 
     // ...existing code...
     // Header scroll effect
     let lastScrollY = window.scrollY;
@@ -264,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
             lastScrollY = currentScrollY;
         });
     }
-
+ 
     // ...existing code...
     // Contact form submission
     const contactForm = document.querySelector('.contact-form');
@@ -294,16 +294,21 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
+ 
     // ...existing code...
-    // Mobile menu toggle
+    // Mobile menu toggle chỉ thực hiện ở mobile (<= 991px)
     const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
     const navMenu = document.querySelector('.nav-menu');
+    function isMobile() {
+        return window.innerWidth <= 400;
+    }
     if (mobileMenuBtn && navMenu) {
         mobileMenuBtn.addEventListener('click', function() {
             const spans = this.querySelectorAll('span');
             if (navMenu.style.display === 'flex') {
-                navMenu.style.display = 'none';
+                if (isMobile()){
+                    navMenu.style.display = 'none';
+                }
                 spans.forEach(span => {
                     span.style.transform = '';
                     span.style.opacity = '';
@@ -333,7 +338,9 @@ document.addEventListener('DOMContentLoaded', function() {
             navMenuLinks.forEach(link => {
                 link.addEventListener('click', () => {
                     const spans = mobileMenuBtn.querySelectorAll('span');
-                    navMenu.style.display = 'none';
+                    if (isMobile()){
+                        navMenu.style.display = 'none';
+                    }
                     spans.forEach(span => {
                         span.style.transform = '';
                         span.style.opacity = '';
@@ -346,16 +353,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 });
-
+ 
 // FAQ toggle function - Global function
 function toggleFAQ(element) {
     if (!element || !element.parentElement) return;
-    
+   
     const faqItem = element.parentElement;
     const icon = element.querySelector('.faq-icon');
-    
+   
     if (!faqItem || !icon) return;
-    
+   
     // Close other FAQ items
     const allFaqItems = document.querySelectorAll('.faq-item');
     allFaqItems.forEach(item => {
@@ -367,9 +374,9 @@ function toggleFAQ(element) {
             }
         }
     });
-    
+   
     faqItem.classList.toggle('active');
-    
+   
     if (faqItem.classList.contains('active')) {
         icon.textContent = '×';
     } else {
